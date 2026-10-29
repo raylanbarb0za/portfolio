@@ -96,7 +96,7 @@ nav .container {
   gap: clamp(1rem, 2.5vw, 2rem);
   list-style: none;
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .navlinks a {
@@ -262,11 +262,12 @@ section:last-of-type {
   color: var(--text-dim);
   margin-bottom: 16px;
   max-width: 62ch;
+  font-size: 16px;
 }
 
 .tabela-info {
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .linha-info {
@@ -304,14 +305,14 @@ section:last-of-type {
 
 .habilidade-celula .categoria {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--pink);
   margin-bottom: 10px;
 }
 
 .habilidade-celula ul {
   list-style: none;
-  font-size: 13.5px;
+  font-size: 15px;
   color: var(--text-dim);
 }
 
@@ -459,6 +460,11 @@ footer p {
   .sobre-grade {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+ /*preenche a grade vazia da secao skill*/
+  .habilidade-celula:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
   }
 
   /* Botão hambúrguer: fica no fluxo do flex, então alinha sozinho com a margem da página */
