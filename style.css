@@ -113,8 +113,8 @@ nav .wrap {
   display: none;
 }
 
-/* ---------- HERO ---------- */
-.hero {
+/* ---------- inicio ---------- */
+.inicio {
   padding: 100px 0 80px;
   border-bottom: 1px solid var(--line);
 }
@@ -162,7 +162,7 @@ nav .wrap {
   color: var(--text-dim);
 }
 
-.hero-code {
+.inicio-code {
   font-family: var(--mono);
   font-size: 14px;
   color: var(--text-dim);
@@ -193,7 +193,7 @@ nav .wrap {
   font-weight: 600;
 }
 
-.hero-actions {
+.inicio-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -325,7 +325,7 @@ section:last-of-type {
 }
 
 /* Projetos */
-.project {
+.projeto {
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 26px 28px;
@@ -334,11 +334,11 @@ section:last-of-type {
   transition: border-color 0.15s;
 }
 
-.project:hover {
+.projeto:hover {
   border-color: var(--accent-dim);
 }
 
-.project-top {
+.top-projeto {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -347,31 +347,31 @@ section:last-of-type {
   flex-wrap: wrap;
 }
 
-.project-title {
+.titulo-projeto {
   font-family: var(--mono);
   font-size: 17px;
   font-weight: 700;
 }
 
-.project-links {
+.links-projeto {
   display: flex;
   gap: 14px;
   font-family: var(--mono);
   font-size: 12px;
 }
 
-.project-links a {
+.links-projeto a {
   text-decoration: none;
   color: var(--text-dim);
   border-bottom: 1px dashed var(--line);
 }
 
-.project-links a:hover {
+.links-projeto a:hover {
   color: var(--accent);
   border-color: var(--accent);
 }
 
-.project p {
+.projeto p {
   color: var(--text-dim);
   font-size: 14.5px;
   margin-bottom: 14px;
@@ -444,7 +444,7 @@ footer p {
     padding: 56px 0;
   }
 
-  .hero {
+  .inicio {
     padding: 72px 0 56px;
   }
 
@@ -452,7 +452,7 @@ footer p {
     padding: 24px 20px;
   }
 
-  .project {
+  .projeto {
     padding: 20px;
   }
 

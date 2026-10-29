@@ -16,6 +16,7 @@
       <span></span>
     </button>
     <ul class="navlinks">
+      <li><a href="#inicio">Início</a></li>
       <li><a href="#sobre">Sobre mim</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projetos">Projetos</a></li>
@@ -24,20 +25,20 @@
   </div>
 </nav>
 
-<header class="hero">
+<header class="inicio" id="inicio">
   <div class="wrap">
     <div class="file-tab">Perfil</div>
     <div class="code-frame">
-      <div class="hero-code">
+      <div class="inicio-code">
         <span class="kw">const</span>
         <span class="fn">dev</span> = <span class="kw">new</span>
         <span class="fn">Desenvolvedor</span>
         </div>
       <h1 class="name">Raylan Barboza<span class="str">// "Programador"</span></h1>
       <p class="role">
-        <strong>Desenvolvedor WEB</strong> focado(a) em construir produtos rápidos, acessíveis e bem estruturados.
+        <strong>Desenvolvedor em formação</strong> focado(a) em construir produtos rápidos, acessíveis e bem estruturados.
       </p>
-      <div class="hero-actions">
+      <div class="inicio-actions">
         <a href="#projetos" class="btn btn-primary">Ver projetos</a>
         <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
         <a href="#" class="btn btn-ghost">Baixar CV</a>
@@ -90,25 +91,28 @@
     </div>
     <div class="skills-grid">
       <div class="skill-cell">
-        <div class="cat">linguagens</div>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>SQL</li>
-        </ul>
-      </div>
-      <div class="skill-cell">
         <div class="cat">front-end</div>
         <ul>
-            <li>HTML / CSS</li>
-            <li>Tailwind</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
         </ul>
       </div>
       <div class="skill-cell">
-        <div class="cat">ferramentas</div>
+        <div class="cat">back-end</div>
+        <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>SQLite</li>
+        </ul>
+      </div>
+      <div class="skill-cell">
+        <div class="cat">Outras linguagens/ferramentas</div>
         <ul>
             <li>Git</li>
             <li>GitHub</li>
+            <li>Python</li>
         </ul>
       </div>
     </div>
@@ -118,49 +122,87 @@
 <section id="projetos">
   <div class="wrap">
     <div class="sec-head">
-        <span class="sec-title">Projetos</span>
+      <span class="sec-title">Projetos</span>
     </div>
-    <p class="sec-sub">Alguns trabalhos que mostram como eu penso e resolvo problemas.</p>
+    <p class="sec-sub">Alguns projetos que mostram como eu penso e resolvo problemas.</p>
 
-    <div class="project">
-      <div class="project-top">
-        <div class="project-title">Nome do Projeto 1</div>
-        <div class="project-links">
-            <a href="#">código</a><a href="#">demo</a>
+    <div class="projeto">
+      <div class="top-projeto">
+        <div class="titulo-projeto">Nexus Safe</div>
+        <div class="links-projeto">
+          <a href="https://github.com/raylanbarb0za/nexussafe" target="_blank" rel="noopener">código</a>
         </div>
       </div>
-      <p>Descreva o problema que o projeto resolve, sua função nele e um resultado concreto (ex: "reduziu o tempo de carregamento em 40%").</p>
-      <div class="tags">
-        <span class="tag">React</span>
-        <span class="tag">Node.js</span>
-        <span class="tag">PostgreSQL</span>
-    </div>
-    </div>
-
-    <div class="project">
-      <div class="project-top">
-        <div class="project-title">Nome do Projeto 2</div>
-        <div class="project-links">
-            <a href="#">código</a>
-            <a href="#">demo</a></div>
-      </div>
-      <p>Mesma estrutura: contexto, seu papel, resultado. Projetos pessoais também contam, especialmente se mostram iniciativa.</p>
+      <p>Projeto acadêmico de pré-TCC sobre segurança industrial na Indústria 4.0, voltado à identificação de riscos
+        emergentes.</p>
       <div class="tags">
         <span class="tag">Python</span>
-        <span class="tag">Django</span>
-        <span class="tag">Docker</span></div>
+        <span class="tag">Indústria 4.0</span>
+      </div>
     </div>
 
-    <div class="project">
-      <div class="project-top">
-        <div class="project-title">Nome do Projeto 3</div>
-        <div class="project-links"><a href="#">código</a><a href="#">demo</a></div>
+    <div class="projeto">
+      <div class="top-projeto">
+        <div class="titulo-projeto">Studio Beleza Absoluta</div>
+        <div class="links-projeto">
+          <a href="https://github.com/raylanbarb0za/studiobelezaabsoluta" target="_blank" rel="noopener">código</a>
+          <a href="https://studiobelezaabsoluta.vercel.app" target="_blank" rel="noopener">site</a>
+        </div>
       </div>
-      <p>Terceiro projeto — pode ser algo mais experimental, um app mobile, ou uma contribuição open source.</p>
+      <p>Site para um negócio real, com apresentação dos serviços, identidade visual e foco em facilitar o contato do
+        cliente. Cuidei do design e do desenvolvimento do front-end.</p>
       <div class="tags">
-        <span class="tag">TypeScript</span>
-        <span class="tag">React Native</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
     </div>
+
+    <div class="projeto">
+      <div class="top-projeto">
+        <div class="titulo-projeto">CRUD Node.js + SQLite</div>
+        <div class="links-projeto">
+          <a href="https://github.com/raylanbarb0za/crud_node_sqlite_js" target="_blank" rel="noopener">código</a>
+        </div>
+      </div>
+      <p>Aplicação back-end para praticar operações CRUD, criação de rotas e integração com banco de dados relacional. O projeto implementa o gerenciamento de produtos, permitindo cadastrar, consultar, atualizar e excluir registros por meio de requisições HTTP.</p>
+      <div class="tags">
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">SQLite</span>
+      </div>
+    </div>
+
+    <div class="projeto">
+      <div class="top-projeto">
+        <div class="titulo-projeto">Controle Financeiro</div>
+        <div class="links-projeto">
+          <a href="https://github.com/raylanbarb0za/controlefinanceiro" target="_blank" rel="noopener">código</a>
+        </div>
+      </div>
+      <p>Aplicação para organizar e acompanhar finanças pessoais, desenvolvida para praticar lógica de programação e
+        manipulação de dados.</p>
+      <div class="tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+    </div>
+
+    <div class="projeto">
+      <div class="top-projeto">
+        <div class="titulo-projeto">Quiz Educacional</div>
+        <div class="links-projeto">
+          <a href="https://github.com/raylanbarb0za/quizeducacional" target="_blank" rel="noopener">código</a>
+        </div>
+      </div>
+      <p>Meu primeiro projeto da faculdade: quiz interativo com perguntas de diferentes disciplinas, voltado ao
+        aprendizado de crianças e adolescentes.</p>
+      <div class="tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
     </div>
   </div>
 </section>
@@ -171,15 +213,15 @@
     <div class="contact-frame">
       <span class="cm">// vamos conversar</span>
       <div class="contact-line"><span class="k">email:</span> <a href="raylanbarbozapessoal@gmail.com">raylanbarbozapessoal@gmail.com</a></div>
-      <div class="contact-line"><span class="k">github:</span> <a href="github.com/raylanbarb0za">github.com/raylanbarb0za</a></div>
-      <div class="contact-line"><span class="k">linkedin:</span> <a href="linkedin.com/in/raylanbarboza">linkedin.com/in/raylanbarboza</a></div>
+      <div class="contact-line"><span class="k">github:</span> <a href="https://github.com/raylanbarb0za">github.com/raylanbarb0za</a></div>
+      <div class="contact-line"><span class="k">linkedin:</span> <a href="https://linkedin.com/in/raylanbarboza">linkedin.com/in/raylanbarboza</a></div>
       <div class="contact-line"><span class="k">localização:</span> Manaus - AM</div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>feito com HTML, CSS e café — © 2026 Raylan Barboza</p>
+  <p>Feito com HTML, CSS e café — © 2026 Raylan Barboza</p>
 </footer>
 
 <script src="index.js"></script>
