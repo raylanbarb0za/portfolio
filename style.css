@@ -8,7 +8,7 @@
   --accent-dim: #3E7A4E;
   --pink: #FF7B9C;
   --blue: #79C0FF;
-  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --mono: 'Satoshi', sans-serif;
   --sans: 'Inter', system-ui, sans-serif;
   --gutter: clamp(1.25rem, 5vw, 1.75rem);
   /* 20px no celular, 28px a partir de ~560px */
