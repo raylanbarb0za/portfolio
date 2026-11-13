@@ -666,6 +666,10 @@ section.bloco {
   .menu a {
     padding: .8rem 1rem
   }
+
+  .rodape {
+    justify-content: center;
+  }
 }
 
 @media (prefers-reduced-motion:reduce) {
