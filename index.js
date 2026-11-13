@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 const raiz = document.documentElement,
   rm = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const botao = document.querySelector(".menu-botao"),
@@ -40,20 +41,42 @@ const secoes = new IntersectionObserver(
 );
 document.querySelectorAll("main section[id]").forEach((s) => secoes.observe(s));
 
-const revela = new IntersectionObserver(
-  (es, o) =>
-    es.forEach((e) => {
-      if (e.isIntersecting) {
-        e.target.classList.add("visivel");
-        o.unobserve(e.target);
-      }
-    }),
-  { threshold: 0.15 },
+const itens = [
+  ...document.querySelectorAll(
+    "#sobre .conteiner > *, #habilidades h2, #habilidades .habilidades-grade > *, #projetos h2, #projetos .intro, .projeto, #contato .painel-contato",
+  ),
+];
+itens.forEach((el) => el.classList.add("revelar"));
+const desloc = itens.map(
+  (el) => ([...el.parentElement.children].indexOf(el) % 3) * 40,
 );
-document.querySelectorAll(".projeto").forEach((el, i) => {
-  el.style.setProperty("--i", i % 2);
-  revela.observe(el);
-});
+let agendado = false;
+const animaItens = () => {
+  const vh = innerHeight;
+  itens.forEach((el, i) => {
+    const p = Math.min(
+      1,
+      Math.max(
+        0,
+        (vh * 1.0 - el.getBoundingClientRect().top - desloc[i]) / (vh * 0.5),
+      ),
+    );
+    el.style.opacity = p;
+    el.style.translate = "0 " + (1 - p) * 48 + "px";
+  });
+  agendado = false;
+};
+const agenda = () => {
+  if (!agendado) {
+    agendado = true;
+    requestAnimationFrame(animaItens);
+  }
+};
+if (!rm) {
+  addEventListener("scroll", agenda, { passive: true });
+  addEventListener("resize", agenda);
+  animaItens();
+}
 
 const hero = document.querySelector(".hero");
 if (!rm && matchMedia("(pointer:fine)").matches) {

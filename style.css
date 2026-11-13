@@ -51,9 +51,7 @@ body {
   overflow-x: hidden
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
   line-height: 1.05;
   letter-spacing: -.025em
@@ -356,21 +354,22 @@ a {
 }
 
 .botao.primario {
-  background: var(--texto);
-  color: var(--fundo)
+  background: #274d79;
+  box-shadow: inset 0 0 0 2px var(--texto);
+  color: #ffffff;
 }
 
 .botao.primario:hover {
-  box-shadow: 0 12px 24px -10px var(--texto)
+  background: #011bac;
 }
 
 .botao.suave {
-  background: var(--chip);
-  box-shadow: inset 0 0 0 2px var(--texto)
+  background: #28272b;
+  box-shadow: inset 0 0 0 2px var(--texto);
 }
 
 .botao.suave:hover {
-  background: var(--rosa)
+  background: #050505;
 }
 
 .cartao-codigo {
@@ -425,7 +424,7 @@ a {
 
 /* Seções */
 section.bloco {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .sobre-grade {
@@ -517,23 +516,12 @@ section.bloco {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition: transform .5s var(--ease), box-shadow .5s var(--ease), opacity .8s var(--ease), scale .8s var(--ease)
+  transition: transform .5s var(--ease), box-shadow .5s var(--ease)
 }
 
 .projeto:hover {
   transform: translateY(-6px);
   box-shadow: 0 24px 40px -24px rgba(91, 74, 156, .55)
-}
-
-.js .projeto {
-  opacity: 0;
-  scale: .96;
-  transition-delay: 0s, 0s, calc(var(--i)*70ms), calc(var(--i)*70ms)
-}
-
-.js .projeto.visivel {
-  opacity: 1;
-  scale: 1
 }
 
 .projeto h3 {
@@ -607,7 +595,7 @@ section.bloco {
 }
 
 .painel-contato {
-  background: linear-gradient(135deg, var(--lavanda), var(--rosa) 55%, var(--pessego));
+  background: #064d2d;
   border-radius: 40px;
   padding: clamp(2rem, 6vw, 4.5rem)
 }
@@ -626,6 +614,10 @@ section.bloco {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: .5rem
+}
+
+.revelar {
+  will-change: opacity, translate
 }
 
 @media (max-width:860px) {
@@ -684,10 +676,5 @@ section.bloco {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important
-  }
-
-  .js .projeto {
-    opacity: 1;
-    scale: 1
   }
 }
