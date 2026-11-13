@@ -1,229 +1,219 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="img/icon.png" type="png">
-<title>Raylan Barboza | Dev em Formação</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfólio de Raylan Barboza, desenvolvedor em formação em Manaus-AM, em busca de estágio ou vaga júnior em tecnologia.">
+  <title>Raylan Barboza | Dev em Formação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <a class="pular" href="#sobre">Pular para o conteúdo</a>
+  <div class="progresso" aria-hidden="true"></div>
 
-<nav>
-  <div class="container">
-    <div class="marca">Raylan Barboza<span>.dev</span></div>
-    <button class="nav-toggle" aria-label="Abrir menu">
-      <span></span>
-    </button>
-    <ul class="navlinks">
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#sobre">Sobre mim</a></li>
-      <li><a href="#habilidades">Skills</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </div>
-</nav>
-
-<header class="inicio" id="inicio">
-  <div class="container">
-    <div class="aba-arquivo">Perfil</div>
-    <div class="moldura-codigo">
-      <div class="inicio-codigo">
-        <span class="palavra-chave">const</span>
-        <span class="funcao">dev</span> = <span class="palavra-chave">new</span>
-        <span class="funcao">Desenvolvedor</span>
-      </div>
-      <h1 class="nome">Raylan Barboza<span class="texto">// "Programador"</span></h1>
-      <p class="cargo">
-        <strong>Desenvolvedor em formação</strong> focado(a) em construir produtos rápidos, acessíveis e bem estruturados.
-      </p>
-      <div class="inicio-acoes">
-        <a href="#projetos" class="botao botao-primario">Ver projetos</a>
-        <a href="#contato" class="botao botao-secundario">Entrar em contato</a>
-      </div>
+  <header class="cabecalho">
+    <div class="conteiner barra">
+      <a class="logo" href="#inicio">raylan<span>.dev</span></a>
+      <button class="menu-botao" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <a href="#inicio">Início</a><a href="#sobre">Sobre mim</a><a href="#habilidades">Skills</a><a
+          href="#projetos">Projetos</a><a href="#contato">Contato</a>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-<section id="sobre">
-  <div class="container">
-    <div class="cabecalho-secao">
-      <span class="titulo-secao">Sobre mim</span>
-    </div>
-    <div class="sobre-grade">
-      <div class="sobre-texto">
-        <p>
-          Desenvolvedor em formação, com foco em construir aplicações funcionais, do front-end ao back-end. Trabalho com HTML, CSS, JavaScript, Node.js e Express, e já desenvolvi um site para um negócio real, uma API de CRUD com SQLite, um sistema de controle financeiro e um quiz interativo. Também estudo Python e uso Git e GitHub para versionar e organizar meus projetos.
-        </p>
-        <p>
-          Cursando Sistemas de Informação na FAMETRO (7º período) e em busca de uma oportunidade de estágio ou vaga júnior em tecnologia, para aplicar o que aprendo a cada dia e crescer em equipe.
-        </p>
-      </div>
-      <div class="tabela-info">
-        <div class="linha-info">
-          <span>localização</span>
-          <span>Manaus - AM</span>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="bolha b1" aria-hidden="true"><i></i></div>
+      <div class="bolha b2" aria-hidden="true"><i></i></div>
+      <div class="bolha b3" aria-hidden="true"><i></i></div>
+      <div class="bolha b4" aria-hidden="true"><i></i></div>
+      <div class="conteiner">
+        <div>
+          <p class="status entra" style="--d:.1s">Aberto a estágio ou vaga júnior</p>
+          <h1><span class="linha"><span>Raylan</span></span><span class="linha"><span>Barboza</span></span></h1>
+          <p class="lead entra" style="--d:.55s">Desenvolvedor em formação focado em construir produtos rápidos,
+            acessíveis e bem estruturados.</p>
+          <div class="acoes entra" style="--d:.7s">
+            <a class="botao primario" href="#projetos">Ver projetos</a>
+            <a class="botao suave" href="#contato">Entrar em contato</a>
+          </div>
         </div>
-        <div class="linha-info">
-          <span>Foco</span>
-          <span>WEB</span>
-        </div>
-        <div class="linha-info">
-          <span>Disponibilidade</span>
-          <span>Aberto</span>
-        </div>
-        <div class="linha-info">
-          <span>Idiomas</span>
-          <span>PT-BR</span>
+        <div class="cartao-codigo entra" style="--d:.9s" aria-hidden="true">
+          <div class="pontos"><b></b><b></b><b></b></div>
+          <span class="k">const</span> dev = {<br>
+          &nbsp;&nbsp;nome: <span class="s">"Raylan"</span>,<br>
+          &nbsp;&nbsp;foco: <span class="s">"Web"</span>,<br>
+          &nbsp;&nbsp;cidade: <span class="s">"Manaus"</span>,<br>
+          &nbsp;&nbsp;aprendendo: <span class="k">true</span><br>
+          };
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="habilidades">
-  <div class="container">
-    <div class="cabecalho-secao">
-      <span class="titulo-secao">Skills</span>
-    </div>
-    <div class="habilidades-grade">
-      <div class="habilidade-celula">
-        <div class="categoria">Front-end</div>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </ul>
+    <section class="bloco" id="sobre">
+      <div class="conteiner sobre-grade">
+        <div>
+          <h2>Sobre mim</h2>
+          <p>Sou desenvolvedor em formação, com foco em construir aplicações funcionais, do front-end ao back-end.
+            Trabalho com HTML, CSS, JavaScript, Node.js e Express, e já desenvolvi um site para um negócio real, uma API
+            de CRUD com SQLite, um sistema de controle financeiro e um quiz interativo. Também estudo Python e uso Git e
+            GitHub para versionar e organizar meus projetos.</p>
+          <p>Curso Sistemas de Informação na FAMETRO (7º período) e busco uma oportunidade de estágio ou vaga júnior em
+            tecnologia, para aplicar o que aprendo a cada dia e crescer em equipe.</p>
+        </div>
+        <dl class="fatos">
+          <div>
+            <dt>Localização</dt>
+            <dd>Manaus, AM</dd>
+          </div>
+          <div>
+            <dt>Foco</dt>
+            <dd>Web</dd>
+          </div>
+          <div>
+            <dt>Disponibilidade</dt>
+            <dd>Aberto</dd>
+          </div>
+          <div>
+            <dt>Idiomas</dt>
+            <dd>PT-BR</dd>
+          </div>
+        </dl>
       </div>
-      <div class="habilidade-celula">
-        <div class="categoria">Back-end</div>
-        <ul>
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>SQLite</li>
-        </ul>
-      </div>
-      <div class="habilidade-celula">
-        <div class="categoria">Outras linguagens/ferramentas</div>
-        <ul>
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>Python</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="projetos">
-  <div class="container">
-    <div class="cabecalho-secao">
-      <span class="titulo-secao">Projetos</span>
-    </div>
-    <p class="subtitulo-secao">Alguns projetos que mostram como eu penso e resolvo problemas.</p>
-
-    <div class="projeto">
-      <div class="top-projeto">
-        <div class="titulo-projeto">Nexus Safe</div>
-        <div class="links-projeto">
-          <a href="https://github.com/raylanbarb0za/nexussafe" target="_blank" rel="noopener">código</a>
+    <section class="bloco" id="habilidades">
+      <div class="conteiner">
+        <h2>Skills</h2>
+        <div class="habilidades-grade">
+          <div>
+            <h3>Front-end</h3>
+            <ul class="etiquetas" style="--tom:var(--lavanda)">
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Back-end</h3>
+            <ul class="etiquetas" style="--tom:var(--azul)">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>SQLite</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Linguagens e ferramentas</h3>
+            <ul class="etiquetas" style="--tom:var(--menta)">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Python</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <p>Projeto acadêmico de pré-TCC sobre segurança industrial na Indústria 4.0, voltado à identificação de riscos
-        emergentes.</p>
-      <div class="etiquetas">
-        <span class="etiqueta">Python</span>
-        <span class="etiqueta">Indústria 4.0</span>
-      </div>
-    </div>
+    </section>
 
-    <div class="projeto">
-      <div class="top-projeto">
-        <div class="titulo-projeto">Studio Beleza Absoluta</div>
-        <div class="links-projeto">
-          <a href="https://github.com/raylanbarb0za/studiobelezaabsoluta" target="_blank" rel="noopener">código</a>
-          <a href="https://studiobelezaabsoluta.vercel.app" target="_blank" rel="noopener">site</a>
+    <section class="bloco" id="projetos">
+      <div class="conteiner">
+        <h2>Projetos</h2>
+        <p class="intro">Alguns projetos que mostram como eu penso e resolvo problemas.</p>
+        <div class="grade-projetos">
+          <article class="projeto destaque t-rosa">
+            <h3>Studio Beleza Absoluta</h3>
+            <p>Site para um negócio real, com apresentação dos serviços, identidade visual e foco em facilitar o contato
+              do cliente. Cuidei do design e do desenvolvimento do front-end.</p>
+            <ul class="etiquetas">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="links"><a href="https://studiobelezaabsoluta.vercel.app" target="_blank" rel="noopener">Ver
+                site</a><a href="https://github.com/raylanbarb0za/studiobelezaabsoluta" target="_blank"
+                rel="noopener">Código</a></div>
+          </article>
+          <article class="projeto t-lavanda">
+            <h3>Nexus Safe</h3>
+            <p>Projeto acadêmico de pré-TCC sobre segurança industrial na Indústria 4.0, voltado à identificação de
+              riscos emergentes.</p>
+            <ul class="etiquetas">
+              <li>Python</li>
+              <li>Indústria 4.0</li>
+            </ul>
+            <div class="links"><a href="https://github.com/raylanbarb0za/nexussafe" target="_blank"
+                rel="noopener">Código</a></div>
+          </article>
+          <article class="projeto t-azul">
+            <h3>CRUD Node.js + SQLite</h3>
+            <p>Back-end para praticar CRUD, rotas e banco relacional. Gerencia produtos: cadastrar, consultar, atualizar
+              e excluir registros via requisições HTTP.</p>
+            <ul class="etiquetas">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>SQLite</li>
+            </ul>
+            <div class="links"><a href="https://github.com/raylanbarb0za/crud_node_sqlite_js" target="_blank"
+                rel="noopener">Código</a></div>
+          </article>
+          <article class="projeto t-menta">
+            <h3>Controle Financeiro</h3>
+            <p>Aplicação para organizar e acompanhar finanças pessoais, criada para praticar lógica de programação e
+              manipulação de dados.</p>
+            <ul class="etiquetas">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="links"><a href="https://github.com/raylanbarb0za/controlefinanceiro" target="_blank"
+                rel="noopener">Código</a></div>
+          </article>
+          <article class="projeto t-pessego">
+            <h3>Quiz Educacional</h3>
+            <p>Meu primeiro projeto da faculdade: quiz interativo com perguntas de diferentes disciplinas, voltado ao
+              aprendizado de crianças e adolescentes.</p>
+            <ul class="etiquetas">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="links"><a href="https://github.com/raylanbarb0za/quizeducacional" target="_blank"
+                rel="noopener">Código</a></div>
+          </article>
         </div>
       </div>
-      <p>Site para um negócio real, com apresentação dos serviços, identidade visual e foco em facilitar o contato do
-        cliente. Cuidei do design e do desenvolvimento do front-end.</p>
-      <div class="etiquetas">
-        <span class="etiqueta">HTML</span>
-        <span class="etiqueta">CSS</span>
-        <span class="etiqueta">JavaScript</span>
-      </div>
-    </div>
+    </section>
 
-    <div class="projeto">
-      <div class="top-projeto">
-        <div class="titulo-projeto">CRUD Node.js + SQLite</div>
-        <div class="links-projeto">
-          <a href="https://github.com/raylanbarb0za/crud_node_sqlite_js" target="_blank" rel="noopener">código</a>
+    <section class="bloco" id="contato">
+      <div class="conteiner">
+        <div class="painel-contato">
+          <h2>Vamos conversar</h2>
+          <p>Estou buscando estágio ou vaga júnior. Se o meu perfil combina com a sua equipe, me chame.</p>
+          <div class="acoes">
+            <a class="botao primario" href="https://linkedin.com/in/raylanbarboza" target="_blank"
+              rel="noopener">LinkedIn</a>
+            <a class="botao suave" href="https://github.com/raylanbarb0za" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
       </div>
-      <p>Aplicação back-end para praticar operações CRUD, criação de rotas e integração com banco de dados relacional. O projeto implementa o gerenciamento de produtos, permitindo cadastrar, consultar, atualizar e excluir registros por meio de requisições HTTP.</p>
-      <div class="etiquetas">
-        <span class="etiqueta">Node.js</span>
-        <span class="etiqueta">Express</span>
-        <span class="etiqueta">SQLite</span>
-      </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="projeto">
-      <div class="top-projeto">
-        <div class="titulo-projeto">Controle Financeiro</div>
-        <div class="links-projeto">
-          <a href="https://github.com/raylanbarb0za/controlefinanceiro" target="_blank" rel="noopener">código</a>
-        </div>
-      </div>
-      <p>Aplicação para organizar e acompanhar finanças pessoais, desenvolvida para praticar lógica de programação e
-        manipulação de dados.</p>
-      <div class="etiquetas">
-        <span class="etiqueta">JavaScript</span>
-        <span class="etiqueta">HTML</span>
-        <span class="etiqueta">CSS</span>
-      </div>
-    </div>
+  <footer class="conteiner rodape">
+    <span>Feito com HTML, CSS, JavaScript e café.</span>
+    <span>© <span id="ano">2026</span> Raylan Barboza. Todos os direitos reservados.</span>
+  </footer>
 
-    <div class="projeto">
-      <div class="top-projeto">
-        <div class="titulo-projeto">Quiz Educacional</div>
-        <div class="links-projeto">
-          <a href="https://github.com/raylanbarb0za/quizeducacional" target="_blank" rel="noopener">código</a>
-        </div>
-      </div>
-      <p>Meu primeiro projeto da faculdade: quiz interativo com perguntas de diferentes disciplinas, voltado ao
-        aprendizado de crianças e adolescentes.</p>
-      <div class="etiquetas">
-        <span class="etiqueta">JavaScript</span>
-        <span class="etiqueta">HTML</span>
-        <span class="etiqueta">CSS</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contato" style="border-bottom:none;">
-  <div class="container">
-    <div class="cabecalho-secao"><span class="titulo-secao">Contato</span></div>
-    <div class="contato-moldura">
-      <span class="comentario">// vamos conversar</span>
-      <div class="contato-linha"><span class="chave">Github:</span> <a href="https://github.com/raylanbarb0za">github.com/raylanbarb0za</a></div>
-      <div class="contato-linha"><span class="chave">Linkedin:</span> <a href="https://linkedin.com/in/raylanbarboza">linkedin.com/in/raylanbarboza</a></div>
-      <div class="contato-linha"><span class="chave">Localização:</span> Manaus - AM</div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>Feito com HTML, CSS, JavaScript e café.</p>
-  <p>© 2026 Raylan Barboza. Todos os direitos reservados.</p>
-</footer>
-
-<script src="index.js"></script>
+  <script src="script.js" defer></script>
 </body>
+
 </html>
